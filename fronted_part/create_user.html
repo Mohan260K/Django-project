@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account</title>
+        <link rel="stylesheet" type="text/css" href="user_create.css"
+    </head>
+    <body>
+        <h2>Create User Account</h2>
+        <div class="form-container">
+        <form action = "/register" method="POST">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td>e-mail</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="others">others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input type="text" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+            </table> 
+            <div class="buttons">
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Reservation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 30px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Book a Table</h2>
+  <form method="POST" action="/api/reserve/">
+    
+    <label for="phone">Table Number:</label>
+    <input type="text" id="Table" name="Table_number" required>
+
+    <label for="date">Reservation Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Reservation Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="number_of_guests" min="1" required>
+
+    <label for="requests">Special Requests:</label>
+    <textarea id="requests" name="special_requests" rows="3" placeholder="Optional"></textarea>
+
+    <button type="submit">Submit Reservation</button>
+  </form>
+</div>
+
+</body>
+</html>
